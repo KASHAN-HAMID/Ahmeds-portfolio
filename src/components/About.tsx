@@ -46,7 +46,7 @@ const About = () => {
           
           {/* Contact */}
           <div className="pt-6">
-            <p className="text-gray-600 mb-2">📧 business.jaiswalutkarsh@gmail.com</p>
+            <p className="text-gray-600 mb-2">📧 business.ahmedsaleem@gmail.com</p>
             <p className="text-blue-600 italic">Yes, I'm also a Content Creator</p>
           </div>
         </div>
