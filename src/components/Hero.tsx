@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
         
         {/* Portfolio - large text */}
-        <h1 className="text-black text-[100px] md:text-[160px] lg:text-[200px] xl:text-[240px] font-black leading-none tracking-tighter transform hover:scale-105 transition-transform duration-300">
+        <h1 className="text-black text-[90px] md:text-[160px] lg:text-[170px] xl:text-[210px] font-black leading-none tracking-tighter transform hover:scale-105 transition-transform duration-300">
           portfolio
         </h1>
         
