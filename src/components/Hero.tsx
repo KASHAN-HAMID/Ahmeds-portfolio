@@ -68,20 +68,18 @@ const Hero = () => {
   return (
     <section className="hero-container relative bg-gradient-to-br from-blue-50 via-white to-blue-50 w-full min-h-screen flex flex-col justify-between items-center font-montserrat overflow-hidden transition-colors duration-3000 ease-in-out animate-gradient">
       {/* Top Tagline */}
-      <div className="flex justify-between items-center w-full px-6 pt-6">
-        <div className="w-1/3 border-t border-blue-500"></div>
-        <p className="text-blue-600 text-sm font-semibold tracking-wide px-4">
+      <div className="flex justify-start items-center w-full px-6 pt-6">
+        <p className="text-blue-600 text-sm font-semibold tracking-wide">
           God is a Designer !
         </p>
-        <div className="w-1/3 border-t border-blue-500"></div>
       </div>
 
       {/* Center Content */}
-      <div className="flex-1 flex flex-col items-center justify-center text-center px-4 z-10">
+      <div className="flex flex-col items-start justify-center text-left px-4 z-10 ml-6">
         <h2 className="text-blue-600 text-2xl md:text-3xl font-semibold mb-2 animate-fadeInUp">
           Graphic Design
         </h2>
-        <h1 className="text-black text-[72px] md:text-[100px] lg:text-[120px] font-extrabold leading-none tracking-tight animate-fadeInUp animation-delay-200">
+        <h1 className="text-white text-[72px] md:text-[100px] lg:text-[120px] font-extrabold leading-none tracking-tight animate-fadeInUp animation-delay-200">
           portfolio
         </h1>
         <p className="text-blue-600 text-lg md:text-xl mt-2 font-medium animate-fadeInUp animation-delay-400">
