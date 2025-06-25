@@ -68,14 +68,14 @@ const Hero = () => {
       {/* Top Tagline */}
       <div className="absolute top-6 left-1/2 -translate-x-1/2 flex items-center w-full px-8">
         <div className="flex-1 border-t border-blue-200"></div>
-        <p className="text-black text-sm font-semibold tracking-wide px-4 whitespace-nowrap">
-          God is a Designer !
+        <p className="text-black text-md font-semibold tracking-wide px-4 whitespace-nowrap">
+          Design that define you !
         </p>
         <div className="flex-1 border-t border-blue-200"></div>
       </div>
 
       {/* Centered Content */}
-      <div className="flex flex-1 items-center justify-center text-center px-6 z-10 mt-48">
+      <div className="flex flex-1 items-center justify-center text-center px-6 z-10 mt-56">
         <div>
           <h2 className="text-blue-600 text-2xl md:text-3xl font-semibold mb-2">
             Graphic Design
