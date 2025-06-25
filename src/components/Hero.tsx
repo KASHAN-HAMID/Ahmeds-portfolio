@@ -75,7 +75,7 @@ const Hero = () => {
       </div>
 
       {/* Centered Content */}
-      <div className="flex flex-1 items-center justify-center text-center px-6 z-10 mt-24">
+      <div className="flex flex-1 items-center justify-center text-center px-6 z-10 mt-48">
         <div>
           <h2 className="text-blue-600 text-2xl md:text-3xl font-semibold mb-2">
             Graphic Design
