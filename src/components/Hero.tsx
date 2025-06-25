@@ -3,7 +3,7 @@ import BackgroundAnimation from './BackgroundAnimation';
 
 const Hero = () => {
   return (
-    <section className="relative bg-gray-900 w-full min-h-screen flex flex-col justify-center overflow-hidden">
+    <section className="relative bg-white w-full min-h-screen flex flex-col justify-center overflow-hidden">
       <BackgroundAnimation />
       
       {/* Top Tagline */}
