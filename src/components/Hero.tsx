@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Top Tagline */}
       <div className="flex justify-between items-center px-8 pt-6">
         <div className="w-1/3 border-t border-blue-600"></div>
-        <p className="text-blue-600 text-sm font-semibold tracking-wide px-4">Design that define you !</p>
+        <p className="text-blue-600 text-md font-semibold tracking-wide px-4">Design that define you !</p>
         <div className="w-1/3 border-t border-blue-600"></div>
       </div>
 
