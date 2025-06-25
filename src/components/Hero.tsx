@@ -22,7 +22,7 @@ const Hero = () => {
         <h1 className="text-black text-[120px] md:text-[180px] lg:text-[220px] font-extrabold leading-none tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           portfolio
         </h1>
-        <p className="text-yellow-500 text-xl md:text-2xl mt-6 font-semibold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <p className="text-blue-500 text-xl md:text-2xl mt-6 font-semibold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Social Media Graphic Design
         </p>
       </div>
