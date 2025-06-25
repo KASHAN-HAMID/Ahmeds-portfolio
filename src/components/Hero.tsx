@@ -1,34 +1,39 @@
-
 import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="text-center max-w-4xl mx-auto">
-        {/* Top tagline */}
-        <div className="inline-block mb-8">
-          <span className="text-blue-600 text-sm font-medium tracking-wider uppercase border-b border-blue-600 pb-1">
-            design that define you  !
-          </span>
-        </div>
-        
-        {/* Main heading */}
-        <div className="mb-8">
-          <h2 className="text-blue-800 text-2xl md:text-3xl font-light mb-4">
-            Graphic Design
-          </h2>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-black leading-none">
-            portfolio
-          </h1>
-          <p className="text-blue-700 text-lg md:text-xl mt-4">
-            Social Media Graphic Design
-          </p>
-        </div>
-        
-        {/* Decorative wave */}
-        <div className="relative">
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-20 rounded-full blur-3xl animate-pulse"></div>
-        </div>
+    <section className="relative bg-[#0f1111] text-white w-full min-h-screen flex flex-col justify-between items-center font-montserrat overflow-hidden">
+      {/* Top Tagline */}
+      <div className="flex justify-between items-center w-full px-6 pt-6">
+        <div className="w-1/3 border-t border-yellow-500"></div>
+        <p className="text-yellow-500 text-sm font-semibold tracking-wide px-4">
+          God is a Designer !
+        </p>
+        <div className="w-1/3 border-t border-yellow-500"></div>
+      </div>
+
+      {/* Center Text */}
+      <div className="flex-1 flex flex-col items-center justify-center text-center px-4 z-10">
+        <h2 className="text-yellow-400 text-2xl md:text-3xl font-semibold mb-2">
+          Graphic Design
+        </h2>
+        <h1 className="text-white text-[72px] md:text-[100px] lg:text-[120px] font-extrabold leading-none tracking-tight">
+          portfolio
+        </h1>
+        <p className="text-yellow-400 text-lg md:text-xl mt-2 font-medium">
+          Social Media Graphic Design
+        </p>
+      </div>
+
+      {/* Gold Wave Background */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 z-0">
+        <div className="w-full h-full bg-[url('/gold-wave.svg')] bg-cover bg-bottom animate-waveMove"></div>
+      </div>
+
+      {/* Optional floating light animation */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-1/4 left-1/3 w-72 h-72 bg-yellow-500 opacity-10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 right-1/4 w-60 h-60 bg-yellow-400 opacity-10 rounded-full blur-2xl animate-ping"></div>
       </div>
     </section>
   );
