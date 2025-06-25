@@ -33,7 +33,7 @@ const Hero = () => {
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(59, 130, 246, ${this.opacity})`; // Tailwind blue-500
+        ctx.fillStyle = `rgba(59, 130, 246, ${this.opacity})`;
         ctx.fill();
       }
     }
@@ -64,9 +64,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero-container relative bg-white w-full min-h-screen flex flex-col justify-between font-montserrat overflow-hidden">
+    <section className="hero-container relative bg-white w-full h-screen flex flex-col font-montserrat overflow-hidden">
       {/* Top Tagline */}
-      <div className="flex items-center justify-between w-full px-8 pt-6">
+      <div className="absolute top-6 left-1/2 -translate-x-1/2 flex items-center w-full px-8">
         <div className="flex-1 border-t border-blue-200"></div>
         <p className="text-black text-sm font-semibold tracking-wide px-4 whitespace-nowrap">
           God is a Designer !
@@ -74,20 +74,22 @@ const Hero = () => {
         <div className="flex-1 border-t border-blue-200"></div>
       </div>
 
-      {/* Center Text Content */}
-      <div className="flex flex-col items-start justify-center flex-1 px-6 sm:px-16 lg:px-32 text-left z-10 mt-10">
-        <h2 className="text-blue-600 text-2xl md:text-3xl font-semibold mb-2">
-          Graphic Design
-        </h2>
-        <h1 className="text-black text-[72px] md:text-[100px] lg:text-[120px] font-extrabold leading-none tracking-tight">
-          portfolio
-        </h1>
-        <p className="text-blue-600 text-lg md:text-xl mt-2 font-medium">
-          Social Media Graphic Design
-        </p>
+      {/* Centered Content */}
+      <div className="flex flex-1 items-center justify-center px-6 text-left z-10">
+        <div className="max-w-6xl w-full">
+          <h2 className="text-blue-600 text-2xl md:text-3xl font-semibold mb-2">
+            Graphic Design
+          </h2>
+          <h1 className="text-black text-[72px] md:text-[100px] lg:text-[120px] font-extrabold leading-none tracking-tight">
+            portfolio
+          </h1>
+          <p className="text-blue-600 text-lg md:text-xl mt-2 font-medium">
+            Social Media Graphic Design
+          </p>
+        </div>
       </div>
 
-      {/* Background Canvas */}
+      {/* Particle Canvas */}
       <canvas className="absolute inset-0 -z-10 pointer-events-none" />
 
       {/* Decorative Blur Glows */}
