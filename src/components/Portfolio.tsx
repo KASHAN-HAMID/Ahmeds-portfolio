@@ -74,26 +74,47 @@ const PortfolioProjects = () => {
           </div>
 
           {/* Contact links with modern design */}
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 mb-12">
-            <a 
-              href="mailto:business.ahmadsaleem@gmail.com" 
-              className="group flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-200/50 hover:shadow-md hover:bg-white transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
-            >
-              <span className="text-2xl mr-3 group-hover:animate-bounce">📧</span>
-              <span className="text-gray-700 group-hover:text-blue-600 transition-colors">
-                business.ahmadsaleem@gmail.com
-              </span>
-            </a>
-            <a 
-              href="https://instagram.com/ahmadSaleem99" 
-              className="group flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-200/50 hover:shadow-md hover:bg-white transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
-            >
-              <span className="text-2xl mr-3 group-hover:animate-bounce">📷</span>
-              <span className="text-gray-700 group-hover:text-blue-600 transition-colors">
-                @ahmadSaleem99
-              </span>
-            </a>
-          </div>
+       <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 mb-12">
+
+  {/* Email */}
+  <a 
+    href="mailto:ahmedsaleem522188@gmail.com" 
+    className="group flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-200/50 hover:shadow-md hover:bg-white transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+  >
+    <span className="text-2xl mr-3 group-hover:animate-bounce">📧</span>
+    <span className="text-gray-700 group-hover:text-blue-600 transition-colors">
+      ahmedsaleem522188@gmail.com
+    </span>
+  </a>
+
+  {/* Instagram */}
+  <a 
+    href="https://www.instagram.com/ahmed_saleem098?utm_source=qr&igsh=MWJvMDgwd2lua2QxcA==" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="group flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-200/50 hover:shadow-md hover:bg-white transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+  >
+    <span className="text-2xl mr-3 group-hover:animate-bounce">📷</span>
+    <span className="text-gray-700 group-hover:text-blue-600 transition-colors">
+      @ahmed_saleem098
+    </span>
+  </a>
+
+  {/* WhatsApp */}
+  <a 
+    href="https://wa.me/923090667720" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="group flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-200/50 hover:shadow-md hover:bg-white transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+  >
+    <span className="text-2xl mr-3 group-hover:animate-bounce">💬</span>
+    <span className="text-gray-700 group-hover:text-blue-600 transition-colors">
+      +92 309 0667720
+    </span>
+  </a>
+
+</div>
+
 
           {/* Thank you message with elegant styling */}
           <div className="text-center mb-8">
