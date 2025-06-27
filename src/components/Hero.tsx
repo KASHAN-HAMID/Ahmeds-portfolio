@@ -79,7 +79,7 @@ const Hero = () => {
   <div>
     <p
       className="text-blue-500 text-lg md:text-xl mt-2 font-semibold"
-      style={{ marginLeft: '-20px' }}
+      style={{ marginLeft: '-80px' }}
     >
       Ahmed Saleem
     </p>
@@ -88,7 +88,7 @@ const Hero = () => {
     </h1>
     <p
       className="text-blue-500 text-lg md:text-xl mt-2 font-semibold"
-      style={{ marginRight: '10px' }}
+      style={{ marginRight: '30px' }}
     >
       Social Media Graphic Design
     </p>
