@@ -127,15 +127,15 @@ const PortfolioProjects = () => {
 
          
 
-          {/* Decorative elements */}
-          <div className="flex justify-center items-center space-x-4">
-            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-            <div className="w-16 h-px bg-gradient-to-r from-blue-500/50 to-gray-400/50"></div>
-            <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse delay-300"></div>
-            <div className="w-16 h-px bg-gradient-to-r from-gray-400/50 to-blue-500/50"></div>
-            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse delay-600"></div>
-          </div>
-        </div>
+          {/* Particle Canvas */}
+      <canvas className="absolute inset-0 -z-10 pointer-events-none" />
+
+      {/* Decorative Blur Glows */}
+      <div className="absolute inset-0 -z-20 pointer-events-none">
+        <div className="absolute top-1/3 left-1/4 w-60 h-60 bg-blue-100 opacity-30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-blue-200 opacity-20 rounded-full blur-2xl animate-ping"></div>
+      </div>
+    
       </footer>
     </div>
   );
