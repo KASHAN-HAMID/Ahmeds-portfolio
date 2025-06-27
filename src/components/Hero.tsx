@@ -75,19 +75,20 @@ const Hero = () => {
       </div>
 
       {/* Centered Content */}
-      <div className="flex flex-1 items-center justify-center text-center px-6 z-10 mt-56">
-        <div>
-         <p className="text-blue-500 text-lg md:text-xl mt-2 font-medium">
-            Ahmed Saleem
-          
-          <h1 className="text-black text-[72px] md:text-[100px] lg:text-[120px] font-extrabold leading-none tracking-tight">
-            portfolio
-          </h1>
-          <p className="text-blue-500 text-lg md:text-xl mt-2 font-medium">
-            Social Media Graphic Design
-          </p>
-        </div>
-      </div>
+   <div className="flex flex-1 items-center justify-center text-center px-6 z-10 mt-56">
+  <div>
+    <p className="text-blue-500 text-lg md:text-xl mt-2 font-medium">
+      Ahmed Saleem
+    </p>
+    <h1 className="text-black text-[72px] md:text-[100px] lg:text-[120px] font-extrabold leading-none tracking-tight">
+      portfolio
+    </h1>
+    <p className="text-blue-500 text-lg md:text-xl mt-2 font-medium">
+      Social Media Graphic Design
+    </p>
+  </div>
+</div>
+
 
       {/* Particle Canvas */}
       <canvas className="absolute inset-0 -z-10 pointer-events-none" />
