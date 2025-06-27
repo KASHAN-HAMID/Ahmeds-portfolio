@@ -108,28 +108,44 @@ const PortfolioProjects = () => {
           </div>
 
           {/* Social Icons (Original Color, Zoom Only on Hover) */}
-          <div className="flex justify-center items-center space-x-8 mb-12">
-            {/* Email */}
-            <a href="mailto:ahmedsaleem522188@gmail.com" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-110">
-              <svg className="w-8 h-8 fill-black" viewBox="0 0 24 24">
-                <path d="M12 13.065L0 6.002V18a2 2 0 002 2h20a2 2 0 002-2V6.002l-12 7.063zM22 4H2a2 2 0 00-2 2v.002L12 13.065 24 6.002V6a2 2 0 00-2-2z" />
-              </svg>
-            </a>
+        <div className="flex justify-center items-center space-x-8 mb-12">
+  {/* Email - neutral dark gray */}
+  <a
+    href="mailto:ahmedsaleem522188@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition-transform hover:scale-110"
+  >
+    <svg className="w-8 h-8 fill-neutral-800" viewBox="0 0 24 24">
+      <path d="M12 13.065L0 6.002V18a2 2 0 002 2h20a2 2 0 002-2V6.002l-12 7.063zM22 4H2a2 2 0 00-2 2v.002L12 13.065 24 6.002V6a2 2 0 00-2-2z" />
+    </svg>
+  </a>
 
-            {/* Instagram */}
-            <a href="https://www.instagram.com/ahmed_saleem098" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-110">
-              <svg className="w-8 h-8 fill-black" viewBox="0 0 24 24">
-                <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 8a4 4 0 110 8 4 4 0 010-8zm6.5-1.75a1 1 0 110 2 1 1 0 010-2zM12 10a2 2 0 100 4 2 2 0 000-4z" />
-              </svg>
-            </a>
+  {/* Instagram - pink brand color */}
+  <a
+    href="https://www.instagram.com/ahmed_saleem098"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition-transform hover:scale-110"
+  >
+    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#E1306C">
+      <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 8a4 4 0 110 8 4 4 0 010-8zm6.5-1.75a1 1 0 110 2 1 1 0 010-2zM12 10a2 2 0 100 4 2 2 0 000-4z" />
+    </svg>
+  </a>
 
-            {/* WhatsApp */}
-            <a href="https://wa.me/923090667720" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-110">
-              <svg className="w-8 h-8 fill-black" viewBox="0 0 32 32">
-                <path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.651.937 5.086 2.496 7.012L4 29l7.147-2.46A12.88 12.88 0 0016.001 27C22.628 27 28 21.627 28 15.001 28 8.373 22.628 3 16.001 3zm0 22.5a10.469 10.469 0 01-5.367-1.483l-.383-.23-4.286 1.478 1.448-4.178-.249-.394A10.456 10.456 0 015.5 15.001c0-5.79 4.711-10.5 10.501-10.5 5.79 0 10.499 4.71 10.499 10.5 0 5.79-4.709 10.5-10.499 10.5zm5.359-7.486c-.301-.15-1.78-.879-2.056-.978-.275-.098-.476-.15-.676.15s-.776.977-.951 1.178c-.174.201-.35.225-.651.075-.301-.15-1.27-.467-2.418-1.486-.893-.796-1.497-1.78-1.673-2.081-.174-.3-.019-.464.131-.614.135-.134.3-.35.45-.524.15-.176.2-.301.3-.501.1-.201.05-.375-.025-.525-.075-.15-.676-1.63-.925-2.229-.25-.6-.5-.525-.676-.525h-.576c-.2 0-.526.075-.801.375-.275.3-1.05 1.027-1.05 2.5s1.075 2.898 1.225 3.099c.15.2 2.125 3.25 5.15 4.549.719.31 1.28.496 1.719.636.721.23 1.375.197 1.894.12.577-.086 1.78-.725 2.033-1.425.25-.7.25-1.3.174-1.425-.075-.124-.275-.2-.576-.35z" />
-              </svg>
-            </a>
-          </div>
+  {/* WhatsApp - green brand color */}
+  <a
+    href="https://wa.me/923090667720"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition-transform hover:scale-110"
+  >
+    <svg className="w-8 h-8" viewBox="0 0 32 32" fill="#25D366">
+      <path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.651.937 5.086 2.496 7.012L4 29l7.147-2.46A12.88 12.88 0 0016.001 27C22.628 27 28 21.627 28 15.001 28 8.373 22.628 3 16.001 3zm0 22.5a10.469 10.469 0 01-5.367-1.483l-.383-.23-4.286 1.478 1.448-4.178-.249-.394A10.456 10.456 0 015.5 15.001c0-5.79 4.711-10.5 10.501-10.5 5.79 0 10.499 4.71 10.499 10.5 0 5.79-4.709 10.5-10.499 10.5zm5.359-7.486c-.301-.15-1.78-.879-2.056-.978-.275-.098-.476-.15-.676.15s-.776.977-.951 1.178c-.174.201-.35.225-.651.075-.301-.15-1.27-.467-2.418-1.486-.893-.796-1.497-1.78-1.673-2.081-.174-.3-.019-.464.131-.614.135-.134.3-.35.45-.524.15-.176.2-.301.3-.501.1-.201.05-.375-.025-.525-.075-.15-.676-1.63-.925-2.229-.25-.6-.5-.525-.676-.525h-.576c-.2 0-.526.075-.801.375-.275.3-1.05 1.027-1.05 2.5s1.075 2.898 1.225 3.099c.15.2 2.125 3.25 5.15 4.549.719.31 1.28.496 1.719.636.721.23 1.375.197 1.894.12.577-.086 1.78-.725 2.033-1.425.25-.7.25-1.3.174-1.425-.075-.124-.275-.2-.576-.35z" />
+    </svg>
+  </a>
+</div>
+
 
           {/* Thank You Note */}
           <div className="text-center mb-8">
