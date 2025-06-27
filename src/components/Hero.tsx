@@ -79,7 +79,7 @@ const Hero = () => {
         <div>
          <p className="text-blue-500 text-lg md:text-xl mt-2 font-medium">
             Ahmed Saleem
-          </h2>
+          
           <h1 className="text-black text-[72px] md:text-[100px] lg:text-[120px] font-extrabold leading-none tracking-tight">
             portfolio
           </h1>
