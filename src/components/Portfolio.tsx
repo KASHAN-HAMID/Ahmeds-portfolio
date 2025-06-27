@@ -125,15 +125,7 @@ const PortfolioProjects = () => {
             </div>
           </div>
 
-          {/* Signature with modern touch */}
-          <div className="text-center mb-8">
-            <div className="inline-block">
-              <span className="text-3xl font-light text-gray-700 tracking-wide">
-                ~ Ahmed Saleem
-              </span>
-              <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent mt-2"></div>
-            </div>
-          </div>
+         
 
           {/* Decorative elements */}
           <div className="flex justify-center items-center space-x-4">
