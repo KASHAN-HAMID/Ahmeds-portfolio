@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const images = [
   '/portfolio/1.jpg',
@@ -11,20 +11,27 @@ const images = [
 ];
 
 const PortfolioProjects = () => {
-  useEffect(() => {
-    const canvas = document.createElement('canvas');
-    const container = document.querySelector('.footer-container');
-    if (!container) return;
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-    container.appendChild(canvas);
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
     canvas.width = window.innerWidth;
     canvas.height = 300;
 
-    const particles = [];
+    const particles: any[] = [];
     const particleCount = 40;
 
     class Particle {
+      x: number;
+      y: number;
+      size: number;
+      speedY: number;
+      opacity: number;
+
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
@@ -64,13 +71,15 @@ const PortfolioProjects = () => {
 
     animate();
 
-    window.addEventListener('resize', () => {
+    const handleResize = () => {
       canvas.width = window.innerWidth;
       canvas.height = 300;
-    });
+    };
+
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      container.removeChild(canvas);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -78,15 +87,22 @@ const PortfolioProjects = () => {
     <div className="relative">
       {images.map((img, idx) => (
         <div key={idx} className="w-full overflow-hidden">
-          <img src={img} alt={`Portfolio project ${idx + 1}`} className="w-full h-auto object-cover" />
+          <img
+            src={img}
+            alt={`Portfolio project ${idx + 1}`}
+            className="w-full h-auto object-cover"
+          />
         </div>
       ))}
 
       <footer className="footer-container relative bg-gradient-to-br from-gray-50 via-blue-50/30 to-white py-16 overflow-hidden border-t border-gray-100">
-        {/* Particle Animation Canvas */}
-        <canvas className="absolute inset-0 -z-10 pointer-events-none" />
+        {/* Particle Animation Behind Footer Content */}
+        <canvas
+          ref={canvasRef}
+          className="absolute inset-0 -z-10 pointer-events-none"
+        />
 
-        {/* Glow Circles */}
+        {/* Decorative Blur Circles */}
         <div className="absolute inset-0 -z-20 pointer-events-none">
           <div className="absolute top-1/3 left-1/4 w-60 h-60 bg-blue-100 opacity-30 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-1/4 w-40 h-40 bg-blue-200 opacity-20 rounded-full blur-2xl animate-ping"></div>
@@ -102,12 +118,14 @@ const PortfolioProjects = () => {
             </h3>
             <div className="flex justify-center items-center space-x-2 mb-6">
               <div className="w-12 h-px bg-gradient-to-r from-transparent to-blue-500"></div>
-              <span className="text-lg font-light text-gray-600 px-4">With Ahmed Saleem</span>
+              <span className="text-lg font-light text-gray-600 px-4">
+                With Ahmed Saleem
+              </span>
               <div className="w-12 h-px bg-gradient-to-l from-transparent to-blue-500"></div>
             </div>
           </div>
 
-          {/* Contact Icons Only */}
+          {/* Contact Icons */}
           <div className="flex justify-center items-center space-x-12 mb-12">
             {/* Email */}
             <a
@@ -168,11 +186,12 @@ const PortfolioProjects = () => {
             </a>
           </div>
 
-
           {/* Thank You Note */}
           <div className="text-center mb-8">
             <div className="inline-block px-8 py-4 bg-white/60 backdrop-blur-sm rounded-full border border-gray-200/30">
-              <p className="text-lg text-gray-600 font-light italic">Thank You for Visiting My Portfolio!</p>
+              <p className="text-lg text-gray-600 font-light italic">
+                Thank You for Visiting My Portfolio!
+              </p>
             </div>
           </div>
         </div>
